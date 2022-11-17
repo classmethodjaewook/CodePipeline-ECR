@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     AWS_DEFAULT_REGION: ap-northeast-1
-    AWS_ACCOUNT_ID: xxxxxxxxxxx
+    AWS_ACCOUNT_ID: 196092325216
     IMAGE_REPO_NAME: test-nginx
     IMAGE_TAG: latest2
 
