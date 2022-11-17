@@ -17,8 +17,8 @@ phases:
       - IMAGE_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
       - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $IMAGE_URI:IMAGE_TAG
       - docker push $IMAGE_URI:IMAGE_TAG
-      - echo "[{\"name\":\"nginx-fargate\",\"imageUri\":\"$IMAGE_URI\"}]" > imagedefinitions.json
+      - echo "[{\"name\":\"nginx-fargate\",\"imageUri\":\"$IMAGE_URI\"}]" > appspec.json
 
 artifacts:
   files:
-    - imagedefinitions.json
+    - appspec.json
